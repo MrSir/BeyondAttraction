@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Balkan Moto</title>
+    <title>Beyond Attraction</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +15,17 @@
     <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
 
     <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/large-style.css" rel="stylesheet">
+    {{--<link href="/css/large-style.css" rel="stylesheet">--}}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126646318-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    {{--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126646318-1"></script>--}}
+    {{--<script>--}}
+      {{--window.dataLayer = window.dataLayer || [];--}}
+      {{--function gtag(){dataLayer.push(arguments);}--}}
+      {{--gtag('js', new Date());--}}
 
-      gtag('config', 'UA-126646318-1');
-    </script>
+      {{--gtag('config', 'UA-126646318-1');--}}
+    {{--</script>--}}
 
     @yield('page-header')
 </head>

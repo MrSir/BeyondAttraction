@@ -21,15 +21,15 @@ Route::get(
 );
 
 Route::get(
-    '/about',
+    '/book',
     [
-        'as' => 'about',
-        'uses' => 'Controller@about',
+        'as' => 'book',
+        'uses' => 'Controller@book',
     ]
 );
 
 Route::resource(
-    '/articles',
+    '/blog',
     'ArticleController',
     [
         'only' => [
@@ -50,18 +50,18 @@ Route::resource(
 );
 
 Route::get(
-    '/contact',
+    '/services',
     [
-        'as' => 'contact',
-        'uses' => 'Controller@contact',
+        'as' => 'services',
+        'uses' => 'Controller@services',
     ]
 );
 
 Route::get(
-    '/privacy',
+    '/subscribe',
     [
         'as' => 'privacy',
-        'uses' => 'Controller@privacy',
+        'uses' => 'Controller@subscribe',
     ]
 );
 
