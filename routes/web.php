@@ -66,6 +66,22 @@ Route::get(
 );
 
 Route::get(
+    '/privacy',
+    [
+        'as' => 'privacy',
+        'uses' => 'Controller@privacy',
+    ]
+);
+
+Route::get(
+    '/contact',
+    [
+        'as' => 'contact',
+        'uses' => 'Controller@contact',
+    ]
+);
+
+Route::get(
     '/logout',
     [
         'as' => 'logout',

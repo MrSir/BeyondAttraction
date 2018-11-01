@@ -32,4 +32,14 @@ class Controller extends BaseController
     {
         return view('pages.subscribe');
     }
+
+    public function privacy()
+    {
+        return view('pages.privacy');
+    }
+
+    public function contact()
+    {
+        return view('pages.contact');
+    }
 }

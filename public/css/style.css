@@ -1,7 +1,7 @@
 html, body {
     background-size: 100%;
     color: #636b6f;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: 100;
     font-size: 30pt;
     height: 100vh;
@@ -19,24 +19,113 @@ html, body {
             'header-grid'
             'content'
             'footer';
-    grid-template-rows: 80px auto 1fr 200px;
+    grid-template-rows: 80px 400px auto 200px;
 }
 
 .container-grid .menu-grid{
     grid-area: menu-grid;
     display: grid;
+    grid-template-areas: 'logo title nav-grid-button' 'nav-grid nav-grid nav-grid';
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 80px;
+    border-bottom: 1px solid #D9D9D9;
+    background-color: #ffd965;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.container-grid .menu-grid .logo{
+    grid-area: logo;
+    background-image: url('/img/no_image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #ffd965;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    justify-self: center;
+}
+
+.container-grid .menu-grid .title{
+    grid-area: title;
+    font-size: 2.5vh;
+    align-self: center;
+    text-align: left;
+}
+
+.container-grid .menu-grid .nav-grid-button{
+    grid-area: nav-grid-button;
+    align-self: center;
+    justify-self: center;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
+
+.container-grid .menu-grid .nav-grid{
+    grid-area: nav-grid;
+    display: none;
 }
 
 .container-grid .header-grid {
     grid-area: header-grid;
     display: grid;
+    border: 1px solid black;
 }
 
 .container-grid .content-grid {
     grid-area: content;
+    border: 1px solid black;
 }
 
 .container-grid .footer-grid {
     grid-area: footer;
     display: grid;
+    grid-template-areas: 'social' 'links' 'copyright';
+    grid-template-rows: 50px 90px 60px;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+.container-grid .footer-grid a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-grid .footer-grid a:hover {
+    color: #ffd965;
+}
+
+.container-grid .footer-grid .social{
+    grid-area: social;
+    display: grid;
+    align-self: end;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.container-grid .footer-grid .links{
+    grid-area: links;
+    font-size: 14px;
+}
+
+.container-grid .footer-grid .links ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-grid .footer-grid .links ul li{
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.container-grid .footer-grid .copyright{
+    grid-area: copyright;
+    color: #D9D9D9;
+    font-size: 12px;
 }
