@@ -16,16 +16,26 @@
     </div>
     <div class="social">
         <div class="facebook">
-            <a href="#" target="_blank"><span class="fab fa-facebook"></span></a>
-        </div>
-        <div class="youtube">
-            <a href="#" target="_blank"><span class="fab fa-youtube"></span></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
         <div class="instagram">
-            <a href="#" target="_blank"><span class="fab fa-instagram"></span></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="twitter">
-            <a href="#" target="_blank"><span class="fab fa-twitter-square"></span></a>
+        <div class="mail">
+            <a href="mailto:email@byeondattraction.net" target="_blank"><i class="far fa-envelope"></i></a>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+  $('.nav-grid-button').click(
+    function() {
+      let menu = $('#menu');
+      
+      if (!menu.hasClass('show')) {
+        menu.addClass('show');
+      } else {
+        menu.removeClass('show');
+      }
+    }
+  );
+</script>

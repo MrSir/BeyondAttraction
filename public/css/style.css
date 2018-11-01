@@ -66,6 +66,32 @@ html, body {
 .container-grid .menu-grid .nav-grid{
     grid-area: nav-grid;
     display: none;
+    font-size: 2.5vh;
+    border-top: 1px solid #D9D9D9;
+}
+
+.container-grid .menu-grid .nav-grid ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-grid .menu-grid .nav-grid ul li{
+    border-bottom: 1px solid #D9D9D9;
+    padding: 10px 0px;
+}
+
+.container-grid .menu-grid .nav-grid ul li:hover{
+    background-color: #fffb9d;
+}
+
+.container-grid .menu-grid .nav-grid a{
+    color: #636b6f;
+    text-decoration: none;
+}
+
+.container-grid .menu-grid .show {
+    display: block;
 }
 
 .container-grid .header-grid {
@@ -91,7 +117,6 @@ html, body {
     justify-items: center;
     background-color: black;
     color: white;
-    font-size: 18px;
 }
 
 .container-grid .footer-grid a {
@@ -107,8 +132,9 @@ html, body {
     grid-area: social;
     display: grid;
     align-self: end;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
+    font-size: 30px;
 }
 
 .container-grid .footer-grid .links{
