@@ -1,3 +1,1 @@
-<div class="header-grid">
-   header goes here
-</div>
+<div class="header-grid"></div>
