@@ -1,7 +1,74 @@
+.content-grid .main-grid{
+    display: grid;
+    grid-template-areas: 'about-grid'
+                         'what-we-do-grid'
+                         'testimonials-grid'
+                         'blog-feed-grid'
+                         'work-with-us-grid';
+    grid-template-rows: repeat(5, auto);
+    width: 100%;
+}
 
+.content-grid .main-grid .about-grid{
+    grid-area: about-grid;
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-areas: 'title'
+                         'sub-title'
+                         'book'
+                         'description'
+                         'book-button';
+    grid-gap: 20px;
+    padding: 30px;
+}
 
+.content-grid .main-grid .about-grid .title{
+    grid-area: title;
+    font-size: 2.5vh;
+}
 
+.content-grid .main-grid .about-grid .sub-title{
+    grid-area: sub-title;
+    font-size: 2vh;
+    text-align: justify;
+    text-indent: 30px;
+}
 
+.content-grid .main-grid .about-grid .book{
+    grid-area: book;
+}
+
+.content-grid .main-grid .about-grid .description{
+    grid-area: description;
+    font-size: 2vh;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.content-grid .main-grid .about-grid .book-button{
+    grid-area: book-button;
+    font-size: 2.5vh;
+}
+
+.content-grid .main-grid .what-we-do-grid{
+    grid-area: what-we-do-grid;
+    width: 100%;
+}
+
+.content-grid .main-grid .testimonials-grid{
+    grid-area: testimonials-grid;
+    width: 100%;
+}
+
+.content-grid .main-grid .blog-feed-grid{
+    grid-area: blog-feed-grid;
+    width: 100%;
+}
+
+.content-grid .main-grid .work-with-us-grid{
+    grid-area: work-with-us-grid;
+    width: 100%;
+}
 
 /*
 .content-grid {
