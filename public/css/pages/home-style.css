@@ -117,13 +117,37 @@
 .content-grid .main-grid .testimonials-grid{
     grid-area: testimonials-grid;
     background-color: #D9D9D9;
-    width: 100%;
+    display: grid;
+    grid-template-areas: 'title'
+                         'description'
+                         'testimonials-carousel';
+    grid-gap: 20px;
+    padding: 30px;
+}
+
+.content-grid .main-grid .testimonials-grid .title{
+    grid-area: title;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+.content-grid .main-grid .testimonials-grid .description{
+    grid-area: description;
+    font-size: 2vh;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.content-grid .main-grid .testimonials-grid .testimonials-carousel{
+    grid-area: testimonials-carousel;
+    font-size: 2vh;
 }
 
 .content-grid .main-grid .blog-feed-grid{
     grid-area: blog-feed-grid;
     background-color: black;
-    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
 }
 
 .content-grid .main-grid .work-with-us-grid{

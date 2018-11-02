@@ -15,7 +15,16 @@ class Controller extends BaseController
 {
     public function home()
     {
-        return view('pages.home');
+        return view(
+            'pages.home',
+            [
+                'articles' => Article::where('is_featured', '=', true)
+                                ->where('is_published', '=', true)
+                                ->orderBy('created_at', 'DESC')
+                                ->take(4)
+                                ->get()
+            ]
+        );
     }
 
     public function book()

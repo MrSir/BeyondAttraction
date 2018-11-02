@@ -49,8 +49,33 @@
                </div>
            </div>
        </div>
-       <div class="testimonials-grid">testimonials</div>
-       <div class="blog-feed-grid">blog feed </div>
+       <div class="testimonials-grid">
+           <div class="title">TESTIMONIALS</div>
+           <div class="description">
+               Suspendisse potenti. Praesent ac neque tempus, accumsan orci sed, laoreet magna. Aliquam mattis lorem ut mi ornare, non pretium nulla aliquet.
+           </div>
+           <div class="testimonials-carousel">
+               *Testimonials go here. Auto rotating (5-6) with star ratings.*
+           </div>
+       </div>
+       <div class="blog-feed-grid">
+           @if(count($articles) === 0)
+               <div>
+                   No articles found.
+               </div>
+           @endif
+           @foreach($articles as $article)
+               <div class="post-grid">
+                   <img src="{{ $article->cover->link }}"/>
+                   <div class="title"><a href="/articles/{{ $article->id }}">{{ $article->title }}</a></div>
+                   <div class="date">Date: {{ $article->published_at->format('Y-m-d') }}</div>
+                   <div class="summary">
+                       {{ $article->summary }}<br/>
+                       <a href="/articles/{{ $article->id }}">Read More</a>
+                   </div>
+               </div>
+           @endforeach
+       </div>
        <div class="work-with-us-grid">work with us</div>
    </div>
 @endsection

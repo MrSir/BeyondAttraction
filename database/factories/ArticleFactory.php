@@ -5,9 +5,9 @@ use Faker\Generator as Faker;
 $factory->define(\App\Article::class, function (Faker $faker) {
     $slug = $faker->word;
 
-    while (!\App\Article::where('slug', '=', $slug)->first()) {
-        $slug = $faker->word();
-    }
+    //while (!\App\Article::where('slug', '=', $slug)->first()) {
+    //    $slug = $faker->word();
+    //}
 
     return [
         'slug' => $faker->word,
