@@ -22,7 +22,33 @@
                <button class="button" onclick="window.load('/book');">Learn more &gt;</button>
            </div>
        </div>
-       <div class="what-we-do-grid">What we do</div>
+       <div class="what-we-do-grid">
+           <div class="title">WHAT WE DO</div>
+           <div class="sub-title">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           </div>
+           <div class="description">
+               Suspendisse potenti. Praesent ac neque tempus, accumsan orci sed, laoreet magna. Aliquam mattis lorem ut mi ornare, non pretium nulla aliquet. Pellentesque at ex id leo accumsan pharetra gravida quis est. Donec efficitur nibh id ullamcorper molestie.
+           </div>
+           <div class="poduct-1 product-grid">
+               <div class="title">Product 1</div>
+               <div class="description">
+                   Suspendisse potenti. Praesent ac neque tempus, accumsan orci sed, laoreet magna. Aliquam mattis lorem ut mi ornare, non pretium nulla aliquet. Pellentesque at ex id leo accumsan pharetra gravida quis est.
+               </div>
+           </div>
+           <div class="poduct-2 product-grid">
+               <div class="title">Product 2</div>
+               <div class="description">
+                   Suspendisse potenti. Praesent ac neque tempus, accumsan orci sed, laoreet magna. Aliquam mattis lorem ut mi ornare, non pretium nulla aliquet. Pellentesque at ex id leo accumsan pharetra gravida quis est.
+               </div>
+           </div>
+           <div class="poduct-3 product-grid">
+               <div class="title">Product 3</div>
+               <div class="description">
+                   Suspendisse potenti. Praesent ac neque tempus, accumsan orci sed, laoreet magna. Aliquam mattis lorem ut mi ornare, non pretium nulla aliquet. Pellentesque at ex id leo accumsan pharetra gravida quis est.
+               </div>
+           </div>
+       </div>
        <div class="testimonials-grid">testimonials</div>
        <div class="blog-feed-grid">blog feed </div>
        <div class="work-with-us-grid">work with us</div>
