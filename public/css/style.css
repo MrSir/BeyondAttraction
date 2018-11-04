@@ -111,9 +111,9 @@ html, body {
 .container-grid .header-grid {
     grid-area: header-grid;
     display: grid;
-    background-image: url('/img/no_image.jpg');
+    background-image: url('/img/no_image_inverted.jpg');
     background-position: center;
-    background-color: white;
+    background-color: black;
     background-repeat: no-repeat;
 }
 

@@ -38,4 +38,19 @@
       }
     }
   );
+
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    console.log(scroll);
+
+    //>=, not <=
+    if (scroll >= 100) {
+      $(".menu-grid").addClass("opaque");
+    }
+
+    if (scroll === 0) {
+      $(".menu-grid").removeClass("opaque");
+    }
+  });
 </script>

@@ -1,37 +1,104 @@
 @media all and (min-device-width: 768px) AND (min-width: 1080px) {
-    .container-grid .header-grid {
-        grid-area: header-grid;
+    .container-grid {
         display: grid;
-        height: 100%;
-        grid-template-areas: 'tutorials builds cruises';
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+                'header-grid'
+                'content'
+                'footer';
+        grid-template-rows: 500px auto 200px;
     }
 
     .container-grid .menu-grid{
-        grid-template-areas: '. logo nav-grid .';
-        grid-template-columns: 20px repeat(2, 1fr) 20px;
+        grid-area: header-grid;
+        grid-template-areas: 'logo title nav-grid';
+        grid-template-columns: 50px 310px auto;
+        grid-template-rows: 100px;
+        border-bottom: none;
+        background-color: transparent;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        color: white;
+    }
+
+    .container-grid .opaque{
+        background-color: #ffd965;
+        border-bottom: 1px solid black;
+        color: #636b6f;
     }
 
     .container-grid .menu-grid .logo{
-        grid-area: logo;
-        margin: 15px 0px 0px 0px;
-        height: 100%;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+    }
+
+    .container-grid .menu-grid .title{
+        font-size: 2vh;
+    }
+
+    .container-grid .menu-grid .nav-grid-button{
+        display: none;
     }
 
     .container-grid .menu-grid .nav-grid{
-        grid-area: nav-grid;
-        grid-template-columns: repeat(auto-fit, 100px);
-        grid-gap: 0px;
-        justify-content: right;
-        align-content: start;
-        margin-top: 20px;
+        display: block;
+        align-self: center;
+        justify-self: right;
+        border: none;
+        font-size: 2.5vh;
+    }
+
+    .container-grid .menu-grid .nav-grid ul li{
+        border-bottom: none;
+        display: inline-block;
+        padding-right: 20px;
+        text-transform: uppercase;
+    }
+
+    .container-grid .menu-grid .nav-grid ul li:hover{
+        background-color: transparent;
     }
 
     .container-grid .menu-grid .nav-grid a{
-        font-size: 18pt;
+        color: white;
+        font-size: 1.5vh;
+    }
+
+    .container-grid .menu-grid .nav-grid a:hover{
+        color: #636b6f;
+    }
+
+    .container-grid .opaque .nav-grid a{
+        color: #636b6f;
+    }
+
+    .container-grid .opaque .nav-grid a:hover{
+        color: white;
     }
 
     .container-grid .footer-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 'links social' 'copyright social';
+        grid-template-rows: 80px 20px;
+        padding: 20px;
+        align-content: center;
+    }
+
+    .container-grid .footer-grid .links{
+        justify-self: left;
+    }
+
+    .container-grid .footer-grid .links ul li{
+        margin: 0px 5px 0px 0px;
+    }
+
+    .container-grid .footer-grid .copyright{
+        justify-self: left;
+    }
+
+    .container-grid .footer-grid .social{
+        align-self: center;
+        justify-self: right;
+        font-size: 50px;
     }
 }

@@ -15,21 +15,21 @@
     {{--<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">--}}
 
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/large-style.css" rel="stylesheet">
 
     <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
             crossorigin="anonymous"></script>
-    {{--<link href="/css/large-style.css" rel="stylesheet">--}}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     {{--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126646318-1"></script>--}}
     {{--<script>--}}
-      {{--window.dataLayer = window.dataLayer || [];--}}
-      {{--function gtag(){dataLayer.push(arguments);}--}}
-      {{--gtag('js', new Date());--}}
+    {{--window.dataLayer = window.dataLayer || [];--}}
+    {{--function gtag(){dataLayer.push(arguments);}--}}
+    {{--gtag('js', new Date());--}}
 
-      {{--gtag('config', 'UA-126646318-1');--}}
+    {{--gtag('config', 'UA-126646318-1');--}}
     {{--</script>--}}
 
     @yield('page-header')
