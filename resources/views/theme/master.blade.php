@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Beyond Attraction</title>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Mitko Tochev">
+    <meta name="theme-color" content="#ffd965">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
