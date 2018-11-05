@@ -1,17 +1,81 @@
-@media all and (min-width: 768px) AND (min-device-width: 1080px) {
-    .content-grid .main-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 50px;
-        padding: 30px 50px;
+@media all and (min-device-width: 768px) AND (min-width: 1080px) {
+    .content-grid .main-grid .about-grid{
+        grid-template-areas:
+                '. title book .'
+                '. sub-title book .'
+                '. description book .'
+                '. book-button book .';
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: auto 600px 400px auto;
+        grid-gap: 0px;
+        padding: 30px;
     }
 
-    .content-grid .instagram-grid{
-        grid-area: instagram-grid;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 410px));
-        grid-auto-flow: dense;
-        grid-gap: 50px;
-        justify-content: center;
-        padding: 30px 50px 50px 50px;
+    .content-grid .main-grid .what-we-do-grid{
+        grid-template-areas:
+                '. title title title .'
+                '. sub-title sub-title sub-title .'
+                '. description description description .'
+                '. product-1 product-2 product-3 .';
+        grid-template-columns: auto repeat(3, 330px) auto;
+        grid-gap: 20px;
+        padding: 30px;
     }
+
+    .content-grid .main-grid .what-we-do-grid .sub-title{
+        justify-self: center;
+    }
+
+    .content-grid .main-grid .testimonials-grid .description{
+        justify-self: center;
+    }
+
+    .content-grid .main-grid .blog-feed-grid{
+        grid-area: blog-feed-grid;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+        padding: 30px;
+    }
+
+    .content-grid .main-grid .blog-feed-grid .post-grid{
+        display: grid;
+        grid-template-areas: 'image';
+        grid-gap: 10px;
+    }
+
+    .content-grid .main-grid .blog-feed-grid .post-grid img{
+        grid-area: image;
+        width: 100%;
+    }
+
+    .content-grid .main-grid .blog-feed-grid .post-grid img:hover + .overlay{
+        display: grid;
+    }
+
+    .container-grid .main-grid .blog-feed-grid .post-grid .overlay:hover {
+        display: grid;
+    }
+
+    .content-grid .main-grid .blog-feed-grid .post-grid .overlay{
+        display: none;
+        background-color: rgba(56,56,56,0.7);
+        cursor: pointer;
+        grid-area: image;
+        padding: 25px;
+    }
+
+    .content-grid .main-grid .blog-feed-grid .post-grid .title a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .content-grid .main-grid .blog-feed-grid .post-grid .title a:hover{
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+    }
+
 }

@@ -181,10 +181,6 @@
     color: #ffd965;
 }
 
-.content-grid .main-grid .blog-feed-grid .post-grid .summary{
-    display: none;
-}
-
 .content-grid .main-grid .work-with-us-grid{
     grid-area: work-with-us-grid;
     display: grid;
