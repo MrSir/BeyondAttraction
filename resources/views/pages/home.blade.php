@@ -74,7 +74,7 @@
        <div class="blog-feed-grid">
            @foreach($articles as $article)
                <div class="post-grid">
-                   <img src="{{ $article->cover->link }}" alt="Post Cover"/>
+                   <div class="img" style="background-image: url('{{ $article->cover->link }}');"></div>
                    <div class="overlay">
                         <div class="title"><a href="/blog/{{ $article->id }}">{{ $article->title }}</a></div>
                    </div>

@@ -54,12 +54,11 @@
         grid-gap: 10px;
     }
 
-    .content-grid .main-grid .blog-feed-grid .post-grid img{
+    .content-grid .main-grid .blog-feed-grid .post-grid .img{
         grid-area: image;
-        width: 100%;
     }
 
-    .content-grid .main-grid .blog-feed-grid .post-grid img:hover + .overlay{
+    .content-grid .main-grid .blog-feed-grid .post-grid .img:hover + .overlay{
         display: grid;
     }
 
