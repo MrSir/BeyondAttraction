@@ -13,12 +13,12 @@ html, body {
 }
 
 .button{
-    background-color: #ffd965;
     cursor: pointer;
-    border: none;
     padding: 10px;
-    border-radius: 3px;
-    box-shadow: 3px 3px #636B6F;
+    font-size: 3vh;
+    border: 1px solid black;
+    width: 330px;
+    background-color: transparent;
 }
 
 .button:hover{
@@ -47,6 +47,7 @@ html, body {
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 2;
 }
 
 .container-grid .menu-grid .logo{
@@ -111,10 +112,6 @@ html, body {
 .container-grid .header-grid {
     grid-area: header-grid;
     display: grid;
-    background-image: url('/img/no_image_inverted.jpg');
-    background-position: center;
-    background-color: black;
-    background-repeat: no-repeat;
 }
 
 .container-grid .content-grid {

@@ -1,4 +1,8 @@
 @media all and (min-device-width: 768px) AND (min-width: 1080px) {
+    .container-grid .header-grid .header{
+        height: 500px;
+    }
+
     .content-grid .main-grid .about-grid{
         grid-template-areas:
                 '. title book .'
@@ -6,9 +10,13 @@
                 '. description book .'
                 '. book-button book .';
         grid-template-rows: repeat(4, auto);
-        grid-template-columns: auto 600px 400px auto;
+        grid-template-columns: auto 500px 500px auto;
         grid-gap: 0px;
         padding: 30px;
+    }
+
+    .content-grid .main-grid .about-grid .book{
+        padding: 0px 40px;
     }
 
     .content-grid .main-grid .what-we-do-grid{
@@ -78,4 +86,7 @@
         color: white;
     }
 
+    .content-grid .main-grid .blog-feed-grid .button{
+        grid-column: 1/5;
+    }
 }

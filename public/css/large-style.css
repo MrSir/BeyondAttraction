@@ -35,7 +35,7 @@
     }
 
     .container-grid .menu-grid .title{
-        font-size: 2vh;
+        font-size: 2.8vh;
     }
 
     .container-grid .menu-grid .nav-grid-button{
@@ -47,7 +47,6 @@
         align-self: center;
         justify-self: right;
         border: none;
-        font-size: 2.5vh;
         margin-right: 50px;
     }
 
@@ -64,7 +63,7 @@
 
     .container-grid .menu-grid .nav-grid a{
         color: white;
-        font-size: 1.5vh;
+        font-size: 2.2vh;
     }
 
     .container-grid .menu-grid .nav-grid a:hover{
@@ -84,6 +83,7 @@
         grid-template-rows: 80px 20px;
         padding: 20px;
         align-content: center;
+        justify-content: center;
     }
 
     .container-grid .footer-grid .links{

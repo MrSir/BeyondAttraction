@@ -10,16 +10,29 @@
        <div class="about-grid">
            <div class="title">ABOUT VANE CARNERO</div>
            <div class="sub-title">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit eros dictum ante pharetra maximus. Suspendisse sapien magna, tincidunt convallis semper at, imperdiet sit amet risus. Duis in eros massa.
+               <p>
+                   But what if no one ever showed you how dating really works? Feeling a bit overwhelmed?
+               </p>
+               <p>
+                   Don’t worry. I’m here to help.
+               </p>
+               <p>
+                   No one ever showed me either. I had to learn it all myself, like most of us out there do. Through my experience I realized that key to your future success at dating is finding that sacred balance between confidence and charm.
+               </p>
            </div>
            <div class="description">
-               Suspendisse potenti. Praesent ac neque tempus, accumsan orci sed, laoreet magna. Aliquam mattis lorem ut mi ornare, non pretium nulla aliquet. Pellentesque at ex id leo accumsan pharetra gravida quis est. Donec efficitur nibh id ullamcorper molestie. Nam aliquet, risus et finibus imperdiet, mi est faucibus sapien, at molestie dolor neque eu neque. Suspendisse vitae neque in tellus tincidunt imperdiet sed a justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+               <p>
+                   My book, Beyond Attraction, will guide you through the dating process, as I will share my personal experience with getting out of the friend zone, fighting the fear of approaching, learning when to talk and when to listen, how to and much, much more. You will learn more about attractive style, effective communication, confidence, and charisma.
+               </p>
+               <p>
+                   There is nothing better than enjoying a dynamic and interesting life with someone who loves you and shares your desire to appreciate life. Remember, nobody has to be alone – and you’re far from being alone in your search for love!
+               </p>
            </div>
            <div class="book">
-               <img src="/img/book-front.jpg"/>
+               <img src="/img/book_front_3D.png" width="100%"/>
            </div>
            <div class="book-button">
-               <button class="button" onclick="window.load('/book');">Learn more &gt;</button>
+               <button class="button" onclick="window.load('/book');">LEARN MORE</button>
            </div>
        </div>
        <div class="what-we-do-grid">
@@ -67,6 +80,7 @@
                    </div>
                </div>
            @endforeach
+           <button class="button" onclick="window.load('/blog');">LEARN MORE</button>
        </div>
        <div class="work-with-us-grid">
            <div class="title">WORK WITH US</div>
@@ -74,7 +88,7 @@
                Suspendisse potenti. Praesent ac neque tempus, accumsan orci sed, laoreet magna. Aliquam mattis lorem ut mi ornare, non pretium nulla aliquet. Pellentesque at ex id leo accumsan pharetra gravida quis est. Donec efficitur nibh id ullamcorper molestie. Nam aliquet, risus et finibus imperdiet, mi est faucibus sapien, at molestie dolor neque eu neque. Suspendisse vitae neque in tellus tincidunt imperdiet sed a justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.
            </div>
            <div class="get-started-button">
-               <button class="button" onclick="window.load('/book');">Get Started Now &gt;</button>
+               <button class="button" onclick="window.load('/book');">GET STARTED NOW</button>
            </div>
        </div>
    </div>
