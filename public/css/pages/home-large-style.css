@@ -60,10 +60,16 @@
 
     .content-grid .main-grid .blog-feed-grid .post-grid .img:hover + .overlay{
         display: grid;
+        grid-template: 'title';
+        align-items: center;
+        justify-items: center;
     }
 
     .container-grid .main-grid .blog-feed-grid .post-grid .overlay:hover {
         display: grid;
+        grid-template: 'title';
+        align-items: center;
+        justify-items: center;
     }
 
     .content-grid .main-grid .blog-feed-grid .post-grid .overlay{

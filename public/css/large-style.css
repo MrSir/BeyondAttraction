@@ -81,6 +81,7 @@
     .container-grid .footer-grid {
         grid-template-areas: 'links social' 'copyright social';
         grid-template-rows: 80px 20px;
+        grid-template-columns: 330px 370px;
         padding: 20px;
         align-content: center;
         justify-content: center;
