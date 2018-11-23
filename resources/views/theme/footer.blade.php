@@ -42,8 +42,6 @@
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    console.log(scroll);
-
     //>=, not <=
     if (scroll >= 100) {
       $(".menu-grid").addClass("opaque");

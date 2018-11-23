@@ -193,6 +193,16 @@
 .content-grid .main-grid .testimonials-grid .testimonials-carousel{
     grid-area: testimonials-carousel;
     font-size: 2vh;
+    justify-self: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.content-grid .main-grid .testimonials-grid .testimonials-carousel .bx-wrapper{
+    -webkit-box-shadow: none;
+     box-shadow: none;
+     border: none;
+     background: transparent;
 }
 
 .content-grid .main-grid .blog-feed-grid{
