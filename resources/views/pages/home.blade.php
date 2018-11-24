@@ -93,50 +93,50 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i><br/>
-                        "I personally know Vane, and what I like about him is that he is a normal guy,
+                        <p>"I personally know Vane, and what I like about him is that he is a normal guy,
                         with a normal job, and a normal family. He does not pretend to be something he is not, but
                         he also
                         knows a lot about dating. I was happy to learn he wrote a book. I would recommend it to any
                         guy who
-                        wants to better at dating."
+                        wants to better at dating."</p>
                     </li>
                     <li><i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i><br/>
-                        "I always considered myself “average” when it comes to dating, but after I read
-                        the book, I realised we are all “average” until we start learning."
+                        <p>"I always considered myself “average” when it comes to dating, but after I read
+                            the book, I realised we are all “average” until we start learning."</p>
                     </li>
                     <li><i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i><br/>
-                        "Vane helped me become more confident without being needy or insecure. Don’t
-                        ever mistake being a great guy with being a nice guy!"
+                        <p>"Vane helped me become more confident without being needy or insecure. Don’t
+                        ever mistake being a great guy with being a nice guy!"</p>
                     </li>
                     <li><i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i><br/>
-                        "I found the book through a Facebook ad and it got me curious. I bought it,
+                        <p>"I found the book through a Facebook ad and it got me curious. I bought it,
                         because I always wanted to know how to overcome my fear of approaching. There are few really
                         awesome
-                        chapters on the whole idea of talking to girls. I learned a lot from it."
+                        chapters on the whole idea of talking to girls. I learned a lot from it."</p>
                     </li>
                     <li><i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i><br/>
-                        "Getting phone numbers, going out on dates and being generally attractive is
+                        <p>"Getting phone numbers, going out on dates and being generally attractive is
                         not a problem for me. But I do get to the point where I’ve been to 10 dates and nothing
                         happens
                         after that. I bought the book, and I read the chapter “Exciting Dating 101”. I found a lot
                         of
-                        answers down there. Thanks Vane!"
+                        answers down there. Thanks Vane!"</p>
                     </li>
                 </ul>
             </div>
@@ -230,10 +230,10 @@
 
               // CAROUSEL
               minSlides: 1,
-              maxSlides: 1,
-              moveSlides: 0,
-              slideWidth: 0,
-              shrinkItems: false,
+              maxSlides: 3,
+              moveSlides: 1,
+              slideWidth: 260,
+              shrinkItems: true,
             },
           )
         },

@@ -205,6 +205,14 @@
      background: transparent;
 }
 
+.content-grid .main-grid .testimonials-grid .testimonials-carousel .bx-wrapper p{
+    text-align: left;
+}
+
+.content-grid .main-grid .testimonials-grid .testimonials-carousel .bx-wrapper li{
+    padding: 0px 10px;
+}
+
 .content-grid .main-grid .blog-feed-grid{
     grid-area: blog-feed-grid;
     background-color: black;
