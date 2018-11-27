@@ -8,6 +8,14 @@
     <link href="/css/pages/home-large-style.css" rel="stylesheet">
 @endsection
 
+@section('header-image')
+    <video loop="loop" autoplay="" playsinline="" muted="" id="home-video"
+           preload="none" src="/videos/home_video.mp4">
+        <source type="video/mp4" src="/videos/home_video.mp4">
+        <source type="video/webm" src="/videos/home_video.mp4">
+    </video>
+@endsection
+
 @section('content')
     <div class="main-grid">
         <div class="about-grid">
@@ -150,21 +158,9 @@
                     </div>
                 </div>
             @endforeach
-            <button class="button" onclick="window.load('/blog');">LEARN MORE</button>
+            <button class="button" onclick="window.location = '/blog';">LEARN MORE</button>
         </div>
-        <div class="work-with-us-grid">
-            <div class="title">WORK WITH US</div>
-            <div class="description">
-                Suspendisse potenti. Praesent ac neque tempus, accumsan orci sed, laoreet magna. Aliquam mattis lorem ut
-                mi ornare, non pretium nulla aliquet. Pellentesque at ex id leo accumsan pharetra gravida quis est.
-                Donec efficitur nibh id ullamcorper molestie. Nam aliquet, risus et finibus imperdiet, mi est faucibus
-                sapien, at molestie dolor neque eu neque. Suspendisse vitae neque in tellus tincidunt imperdiet sed a
-                justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="get-started-button">
-                <button class="button" onclick="window.load('/book');">GET STARTED NOW</button>
-            </div>
-        </div>
+        @include('theme.work-with-us')
     </div>
     <script type="text/javascript">
       $(document).ready(
@@ -232,7 +228,7 @@
               minSlides: 1,
               maxSlides: 3,
               moveSlides: 1,
-              slideWidth: 260,
+              slideWidth: 400,
               shrinkItems: true,
             },
           )

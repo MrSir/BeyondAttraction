@@ -1,53 +1,9 @@
-.container-grid .header-grid{
-    display: grid;
-    grid-template-areas: 'header';
-    align-items: center;
-    justify-items: center;
-}
-
-.container-grid .header-grid .header{
-    grid-area: header;
-    overflow: hidden;
-    height: 400px;
-}
-
 .container-grid .header-grid .header video{
     margin: 0px;
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-}
-
-.container-grid .header-grid .header-text-grid{
-    grid-area: header;
-    display: grid;
-    grid-template-areas:
-            'title'
-            'description';
-    grid-template-rows: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
-    z-index: 1;
-    background-color: rgba(0,0,0,0.8);
-    width: 100%;
-    height: 100%;
-}
-
-.container-grid .header-grid .header-text-grid .title{
-    grid-area: title;
-    color: #ffd965;
-    align-self: end;
-    font-size: 4vh;
-    font-weight: bold;
-    padding-bottom: 30px;
-}
-
-.container-grid .header-grid .header-text-grid .description{
-    grid-area: description;
-    color: white;
-    align-self: baseline;
-    font-size: 5vh;
 }
 
 .content-grid .main-grid{
@@ -187,7 +143,6 @@
     grid-area: description;
     font-size: 2vh;
     text-align: justify;
-    text-indent: 30px;
 }
 
 .content-grid .main-grid .testimonials-grid .testimonials-carousel{
@@ -195,7 +150,7 @@
     font-size: 2vh;
     justify-self: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .content-grid .main-grid .testimonials-grid .testimonials-carousel .bx-wrapper{
@@ -265,37 +220,4 @@
     background-color: #fffb9d;
     color: black;
     border: 1px solid black;
-}
-
-.content-grid .main-grid .work-with-us-grid{
-    grid-area: work-with-us-grid;
-    display: grid;
-    background-color: #ffd965;
-    grid-template-areas: 'title'
-                         'description'
-                         'get-started-button';
-    grid-gap: 20px;
-    padding: 30px;
-}
-
-.content-grid .main-grid .work-with-us-grid .title{
-    grid-area: title;
-    font-size: 2.5vh;
-    font-weight: bold;
-}
-
-.content-grid .main-grid .work-with-us-grid .description{
-    grid-area: description;
-    font-size: 2vh;
-    text-align: justify;
-    text-indent: 30px;
-}
-
-.content-grid .main-grid .work-with-us-grid .get-started-button{
-    grid-area: get-started-button;
-    font-size: 2.5vh;
-}
-
-.content-grid .main-grid .work-with-us-grid .get-started-button .button{
-
 }

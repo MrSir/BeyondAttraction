@@ -82,17 +82,12 @@ class ArticleController extends Controller
 
         $query->orderBy('created_at', 'DESC');
 
-        $articles = $query->paginate(10);
-
-        $tags = Tag::all();
+        $articles = $query->paginate(6);
 
         return view(
             'pages.articles.index',
             [
-                'headerText' => 'ARTICLES',
                 'articles' => $articles,
-                'keyword' => $keyword,
-                'tags' => $tags,
             ]
         );
     }
@@ -111,7 +106,6 @@ class ArticleController extends Controller
         return view(
             'pages.articles.show',
             [
-                'headerText' => 'ARTICLE',
                 'article' => $article,
             ]
         );

@@ -1,8 +1,4 @@
 @media all and (min-device-width: 768px) AND (min-width: 1080px) {
-    .container-grid .header-grid .header{
-        height: 500px;
-    }
-
     .content-grid .main-grid .about-grid{
         grid-template-areas:
                 '. title book .'

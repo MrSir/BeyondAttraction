@@ -8,6 +8,10 @@
         grid-template-rows: 500px auto 200px;
     }
 
+    .container-grid .header-grid .header{
+        height: 500px;
+    }
+
     .container-grid .menu-grid{
         grid-area: header-grid;
         grid-template-areas: 'logo title nav-grid';

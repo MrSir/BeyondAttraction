@@ -1,10 +1,6 @@
-@media all and (min-width: 768px) AND (min-device-width: 1080px) {
-    .content-grid {
-        display: grid;
-        grid-template-areas:
-                'posts sidebar'
-                'pagination sidebar';
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 20px;
+@media all and (min-device-width: 768px) AND (min-width: 1080px) {
+    .content-grid .posts{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+        justify-content: center;
     }
 }
