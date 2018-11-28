@@ -1,20 +1,24 @@
-.content-grid {
-    margin: 20px;
-}
-
 .content-grid .post-grid{
     display: grid;
     grid-template-areas:
-            'title'
             'date'
-            'tags'
+            'title'
             'body';
     grid-template-columns: 1fr;
+    margin: 40px;
 }
 
 .content-grid .post-grid img{
     grid-area: image;
     width: 100%;
+}
+
+.content-grid .post-grid .date{
+    grid-area: date;
+    color: #636b6f;
+    font-size: 12pt;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .content-grid .post-grid .title{
@@ -30,17 +34,6 @@
     color: #636b6f;
 }
 
-.content-grid .post-grid .date{
-    grid-area: date;
-    color: lightgray;
-    font-size: 0.75em;
-    text-align: left;
-}
-
-.content-grid .post-grid .date a{
-    text-decoration: none;
-}
-
 .content-grid .post-grid .body{
     grid-area: body;
     font-size: 16pt;
@@ -53,23 +46,4 @@
 
 .content-grid .post-grid .body a:hover{
     color: #636b6f;
-}
-
-.content-grid .post-grid .tags{
-    font-size: 0.5em;
-    color: #636b6f;
-    text-align: justify;
-}
-
-.content-grid .post-grid .tags .tag{
-    display: inline-block;
-}
-
-.content-grid .post-grid .tags .tag a{
-    text-decoration: underline;
-    color: #636b6f;
-}
-
-.content-grid .post-grid .tags .tag a:hover{
-    text-decoration: none;
 }

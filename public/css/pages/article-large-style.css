@@ -1,6 +1,6 @@
-@media all and (min-width: 768px) AND (min-device-width: 1080px) {
-    .content-grid {
-        margin: 20px auto;
+@media all and (min-device-width: 768px) AND (min-width: 1080px) {
+    .content-grid .post-grid{
+        margin: 40px auto;
         max-width: 800px;
     }
 }
